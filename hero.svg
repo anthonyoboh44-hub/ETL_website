@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffd24d" />
+      <stop offset="100%" stop-color="#ffb84d" />
+    </linearGradient>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#102334" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#1a344a" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="420" fill="#ffffff" />
+
+  <!-- Yellow diagonal swoosh -->
+  <polygon points="0,0 1100,0 700,420 0,420" fill="url(#g1)" opacity="0.98"/>
+
+  <!-- Dark overlay on right -->
+  <rect x="680" y="20" width="500" height="380" rx="18" ry="18" fill="url(#g2)" />
+
+  <!-- Accent rounded image placeholder (where a car photo can be placed) -->
+  <g transform="translate(720,40)">
+    <rect width="360" height="300" rx="18" ry="18" fill="#ffffff" opacity="0.06"/>
+  </g>
+
+  <!-- Text group -->
+  <g transform="translate(60,110)">
+    <text x="0" y="0" font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif" font-size="36" fill="#ffffff" font-weight="700">ESSEL</text>
+    <text x="0" y="46" font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif" font-size="36" fill="#ffd700" font-weight="800">TRANSPORT &amp; LOGISTICS</text>
+
+    <rect x="0" y="70" width="120" height="4" rx="2" fill="#ffd700" />
+
+    <text x="0" y="110" font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif" font-size="18" fill="#ffffff" font-weight="500">Luxury Made Easy &amp; Simple — Reliable vehicles, professional drivers.</text>
+
+    <a href="#cars" aria-label="View available cars">
+      <rect x="0" y="150" width="220" height="46" rx="24" fill="#ffffff" opacity="0.12" stroke="#ffffff" stroke-opacity="0.15" />
+      <text x="30" y="182" font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif" font-size="18" fill="#ffffff">Browse Vehicles</text>
+    </a>
+  </g>
+
+  <!-- Simple car silhouette (decorative) -->
+  <g transform="translate(360,240) scale(1.1)" fill="#ffffff" opacity="0.95">
+    <path d="M10 60 C30 30, 80 20, 140 20 L300 20 C360 20, 410 45, 430 70 L430 90 L40 90 Z" opacity="0.95"/>
+    <circle cx="130" cy="100" r="18" fill="#102334" />
+    <circle cx="330" cy="100" r="18" fill="#102334" />
+    <circle cx="130" cy="100" r="10" fill="#ffffff" />
+    <circle cx="330" cy="100" r="10" fill="#ffffff" />
+  </g>
+
+  <!-- Small logo placeholder top-right -->
+  <g transform="translate(880,30)">
+    <rect width="180" height="52" rx="8" ry="8" fill="#ffffff" opacity="0.07" />
+    <text x="18" y="34" font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif" font-size="16" fill="#ffffff">Essel Transport</text>
+  </g>
+
+</svg>
