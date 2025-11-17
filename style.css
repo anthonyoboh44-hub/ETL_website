@@ -1090,3 +1090,318 @@ footer p {
     opacity: 1;
     transform: translateY(0);
 }
+/* Contact Section Styles */
+.contact-section {
+    background-color: #f0f7ff;
+    padding: 60px 0;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.contact-info {
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid #e6e6e6;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.contact-info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #1a344a, #ffd700);
+    z-index: 2;
+}
+
+.info-item {
+    margin-bottom: 30px;
+    font-size: 19px;
+    padding: 20px;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 12px;
+    border-left: 5px solid #ffd700;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.info-item:hover {
+    transform: translateX(5px);
+    background: rgba(255, 215, 0, 0.15);
+}
+
+.info-item strong {
+    color: #1a344a;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.info-item p {
+    margin: 5px 0;
+    line-height: 1.7;
+    color: #555;
+}
+
+.contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid #e6e6e6;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.contact-form h3 {
+    color: #1a344a;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 26px;
+    position: relative;
+    z-index: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1a344a;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ffd700;
+    box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.2);
+}
+
+.contact-ethics {
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid #e6e6e6;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-ethics h3 {
+    color: #1a344a;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-ethics h3::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(to right, #1a344a, #ffd700);
+    border-radius: 2px;
+}
+
+.contact-ethics p {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.ethics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.ethic-item {
+    padding: 25px;
+    background: linear-gradient(135deg, #f8f9ff 0%, #e6f0ff 100%);
+    border-radius: 12px;
+    border-left: 6px solid #1a344a;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.ethic-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #1a344a, #ffd700);
+    z-index: 2;
+}
+
+.ethic-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.ethic-item h4 {
+    color: #1a344a;
+    margin-bottom: 15px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.ethic-item h4::before {
+    margin-right: 12px;
+    font-size: 26px;
+    position: relative;
+    z-index: 1;
+}
+
+.ethic-item h4:nth-of-type(1)::before { content: '🔒'; }
+.ethic-item h4:nth-of-type(2)::before { content: '🤝'; }
+.ethic-item h4:nth-of-type(3)::before { content: '🌟'; }
+
+.ethic-item p {
+    color: #555;
+    line-height: 1.7;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-message {
+    text-align: center;
+    background: linear-gradient(135deg, #1a344a 0%, #2c5a85 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 18px;
+    margin-top: 40px;
+    box-shadow: 0 10px 30px rgba(26, 52, 74, 0.3);
+}
+
+.contact-message p {
+    margin-bottom: 15px;
+    font-size: 19px;
+    text-align: center;
+    line-height: 1.8;
+    color: white;
+}
+
+.contact-message p:last-child {
+    font-weight: bold;
+    font-size: 22px;
+    color: #ffd700;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(to right, #1a344a, #2c5a85);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(to right, #ffd700, #1a344a, #ffd700);
+}
+
+footer p {
+    font-size: 17px;
+    position: relative;
+    z-index: 1;
+}
+
+.admin-button {
+    background: #ffd700;
+    color: #1a344a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.admin-button:hover {
+    background: #ffcc00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info,
+    .contact-form,
+    .contact-ethics {
+        margin-bottom: 30px;
+    }
+    
+    .contact-message {
+        margin-top: 30px;
+    }
+    
+    .contact-ethics h3 {
+        font-size: 24px;
+    }
+    
+    .contact-message p {
+        font-size: 18px;
+    }
+    
+    .contact-message p:last-child {
+        font-size: 20px;
+    }
+}
